@@ -1,18 +1,77 @@
-## Getting Started
+# TP 03 - Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+1.  Calculadora.  
+Construir o Form abaixo e possibilitar o cálculo das operações de 
+divisão, multiplicação, subtração e adição. 
+OBS:  
+- O botão C = Clear e limpa a memória da calculadora e também zera o text field 
+de resultado. 
+- Colocar tratamento de erros (try, catch, finally)
 
-## Folder Structure
+2. Crie a estrutura de classes indicada abaixo 
+Pessoa From default
 
-The workspace contains two folders by default, where:
+| Atributo/Operação        | Tipo        |
+|--------------------------|-------------|
+| **kp**                    | `int`       |
+| **nome**                  | `String`    |
+| **sexo**                  | `char`      |
+| **idade**                 | `int`       |
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+| **Método**                | Tipo de Retorno |
+|--------------------------|-----------------|
+| `Pessoa()`               | `void`          |
+| `Pessoa(String, char, int)` | `void`          |
+| `setKp()`                | `void`          |
+| `setNome(String)`        | `void`          |
+| `setSexo(char)`          | `void`          |
+| `setIdade(int)`          | `void`          |
+| `getKp()`                | `int`           |
+| `getNome()`              | `String`        |
+| `getSexo()`              | `char`          |
+| `getIdade()`             | `int`           |
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Classe Pessoa
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+| Atributo/Operação        | Tipo        |
+|--------------------------|-------------|
+| **kp**                    | `int`       |
+| **nome**                  | `String`    |
+| **sexo**                  | `char`      |
+| **idade**                 | `int`       |
 
-## Dependency Management
+| **Método**                | Tipo de Retorno |
+|--------------------------|-----------------|
+| `Pessoa()`               | `void`          |
+| `Pessoa(String, char, int)` | `void`          |
+| `setKp()`                | `void`          |
+| `setNome(String)`        | `void`          |
+| `setSexo(char)`          | `void`          |
+| `setIdade(int)`          | `void`          |
+| `getKp()`                | `int`           |
+| `getNome()`              | `String`        |
+| `getSexo()`              | `char`          |
+| `getIdade()`             | `int`           |
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+
+### Versão 01: Usando JTextField para o Sexo
+
+- **Sexo**: Campo `TextField` para inserir "M" ou "F".
+- **Campos obrigatórios**: Nome, Sexo e Idade.
+
+---
+
+### Versão 02: Usando JComboBox para o Sexo
+
+- **Sexo**: Componente `JComboBox` para escolher entre "M" e "F".
+- **Campos obrigatórios**: Nome, Sexo e Idade.
+
+---
+
+### Versão 03: Usando JRadioButton para o Sexo
+
+- **Sexo**: Componente `JRadioButton` para selecionar entre "M" e "F".
+- **Campos obrigatórios**: Nome, Sexo e Idade.
+
+
